@@ -37,7 +37,7 @@ if (version_compare(PHPUnit_Runner_Version::id(), '4.0.0', '<')) {
 /*
  * Set error reporting to the level to which Zend Framework code must comply.
  */
-error_reporting(E_ALL & ~E_DEPRECATED);
+error_reporting(E_ALL & E_STRICT & ~E_DEPRECATED);
 
 /*
  * Determine the root, library, and tests directories of the framework
