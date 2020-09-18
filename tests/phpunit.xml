@@ -1,4 +1,10 @@
-<phpunit bootstrap="./TestHelper.php">
+<phpunit
+    bootstrap="./TestHelper.php"
+    convertErrorsToExceptions="true"
+    convertNoticesToExceptions="true"
+    convertWarningsToExceptions="true"
+    convertDeprecationsToExceptions="false"
+    >
     <testsuite name="Zend Framework - Testsuite">
         <directory>./</directory>
     </testsuite>
