@@ -19,6 +19,7 @@ install:
 
 services:
   - memcached
+  - mysql
 
 before_script:
   - phpenv config-rm xdebug.ini || return 0
